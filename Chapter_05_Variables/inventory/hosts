@@ -1,0 +1,13 @@
+[web]
+vagrant1 ansible_port=2222
+[task]
+vagrant2 ansible_port=2200
+[rabbitmq]
+vagrant3 ansible_port=2201
+[db]
+vagrant3 ansible_port=2201
+
+[djang:children]
+web
+task
+
